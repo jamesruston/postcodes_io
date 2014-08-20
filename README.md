@@ -26,7 +26,7 @@ Require the gem
 require 'PostcodesIO'
 ```
 
-Create new instance of the Postcode::IO
+Create new instance of the Postcodes::IO
 
 ```ruby
 pio = Postcodes::IO.new
