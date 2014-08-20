@@ -1,0 +1,27 @@
+{
+    "status": 200,
+    "result": {
+        "postcode": "CM12 9TR",
+        "quality": 1,
+        "eastings": 567111,
+        "northings": 191249,
+        "country": "England",
+        "nhs_ha": "East of England",
+        "admin_county": "Essex",
+        "admin_district": "Basildon",
+        "admin_ward": "Burstead",
+        "longitude": 0.411227930206834,
+        "latitude": 51.5953004291798,
+        "parliamentary_constituency": "Basildon and Billericay",
+        "european_electoral_region": "Eastern",
+        "primary_care_trust": "South West Essex",
+        "region": "East of England",
+        "parish": "Little Burstead",
+        "lsoa": "Basildon 009A",
+        "msoa": "Basildon 009",
+        "nuts": "Burstead",
+        "incode": "9TR",
+        "outcode": "CM12",
+        "ccg": "NHS Basildon and Brentwood CCG"
+    }
+}
