@@ -1,6 +1,6 @@
 # PostcodesIo
 
-TODO: Write a gem description
+A simple wrapper around [postcodes.io](http://postcodes.io/)
 
 ## Installation
 
@@ -20,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Require the gem
+
+```ruby
+require 'PostcodesIO'
+```
+
+Lookup a postcode
+
+```ruby
+result = PostcodesIO::lookup('NN12 8TN')
+puts result.longitude #
+puts result.latitude #
+```
 
 ## Contributing
 

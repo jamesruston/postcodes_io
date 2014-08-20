@@ -6,10 +6,10 @@ require 'postcodes_io/version'
 Gem::Specification.new do |spec|
   spec.name          = "postcodes_io"
   spec.version       = PostcodesIo::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.authors       = ["James Ruston"]
+  spec.email         = ["jruston90@gmail.com"]
+  spec.summary       = %q{Lookup postcodes}
+  spec.description   = %q{Get rich data from postcode lookups. Wraps postcodes.io}
   spec.homepage      = ""
   spec.license       = "MIT"
 
