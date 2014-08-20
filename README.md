@@ -43,7 +43,7 @@ postcode.longitude # -1.02144562675883
 postcode.latitude # 52.0776806788868
 ```
 
-All available fields
+##All available fields
 
 |name|description|
 |----|-----------|
@@ -67,6 +67,8 @@ All available fields
 |msoa| [The 2011 Census middle layer SOA (MSOA) code](The 2011 Census lower layer SOA code for England and Wales](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/census/super-output-areas--soas-/index.html)|
 |ccg| Clinical Commissioning Group |
 |nuts| [see here](http://en.wikipedia.org/wiki/Nomenclature_of_Territorial_Units_for_Statistics)|
+
+For more details see [the documentation on postcodes.io](http://postcodes.io/docs)
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/postcodes_io/fork )
