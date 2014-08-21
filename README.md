@@ -43,6 +43,18 @@ postcode.longitude # -1.02144562675883
 postcode.latitude # 52.0776806788868
 ```
 
+Make a batch postcode lookup request
+
+> max 100 postcodes per request
+
+```ruby
+postcodes = pio.lookup('NN12 8TN', 'DA3 8NG') # or pio.lookup(['NN12 8TN', 'DA3 8NG'])
+postcodes.each do |p|
+  puts p.nuts
+end
+```
+
+
 ##All available fields
 
 |name|description|
