@@ -9,8 +9,8 @@ module Postcodes
 
     # allow accessing info values with dot notation
     def method_missing(name, *args, &block)
+      return @info[name.to_s] if @info.key? name.to_s
       return @info[name] if @info.key? name
-      @info.each { |k,v| return v if k.to_s.to_sym == name }
       super.method_missing name
     end
   end
