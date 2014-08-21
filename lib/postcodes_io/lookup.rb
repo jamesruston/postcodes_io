@@ -6,11 +6,12 @@ module Postcodes
   module Lookup
 
 
-    def lookup(postcode)
-      if postcode.class == Array
-        lookup_multiple postcode
+    def lookup(*postcodes)
+      postcodes.flatten!
+      if postcodes.count > 1
+        lookup_multiple postcodes
       else
-        lookup_postcode postcode
+        lookup_postcode postcodes.first
       end
     end
           
@@ -29,16 +30,12 @@ module Postcodes
     end
 
     def lookup_multiple(postcodes)
-      puts "looking up #{postcodes}"
       payload = {postcodes: postcodes.map {|p| remove_whitespace p}}
-      puts "built payload #{payload.to_json}"
       response = Excon.post(
         "https://api.postcodes.io/postcodes",
          body: payload.to_json,
          headers: {'Content-Type' => 'application/json'}
          )
-
-      puts "got response #{response.body}"
 
       process_response(response) do |r|
         return r['result'].map do |result|

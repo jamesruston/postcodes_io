@@ -27,7 +27,6 @@ describe Postcodes::IO do
   end
 
   describe '#lookup with multiple postcodes' do
-
     before :each do
       stub_request(:post, "#{base_url}/postcodes")
         .with(body: postcode_payload, headers: {'Content-Type' => 'application/json'})
@@ -50,5 +49,14 @@ describe Postcodes::IO do
       end
     end
 
+    describe 'as splat' do
+      let(:output) { subject.lookup('OX495NU', 'M320JG', 'NE301DP') }
+      
+      it 'allows passing postcodes as multiple arguments' do
+        output
+        WebMock.should have_requested(:post, "#{base_url}/postcodes")
+      end
+
+    end
   end
 end
