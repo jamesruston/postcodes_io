@@ -23,7 +23,7 @@ Or install it yourself as:
 Require the gem
 
 ```ruby
-require 'PostcodesIO'
+require 'postcodes_io'
 ```
 
 Create new instance of the Postcodes::IO
