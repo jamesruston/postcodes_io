@@ -32,7 +32,7 @@ Create new instance of the Postcodes::IO
 pio = Postcodes::IO.new
 ```
 
-Lookup a postcode
+####Lookup a postcode
 ```ruby
 postcode = pio.lookup('NN12 8TN')
 ```
@@ -43,7 +43,7 @@ postcode.longitude # -1.02144562675883
 postcode.latitude # 52.0776806788868
 ```
 
-Make a batch postcode lookup request
+####Make a batch postcode lookup request
 
 > max 100 postcodes per request
 
@@ -54,6 +54,12 @@ postcodes.each do |p|
 end
 ```
 
+####Autocomplete a postcode
+
+```ruby
+postcodes = pio.autocomplete('NN12')
+puts postcodes.list # ["NN12 6AA", "NN12 6AB", "NN12 6AD", "NN12 6AE", "NN12 6AF", "NN12 6AG", "NN12 6AH", "NN12 6AJ", "NN12 6AL", "NN12 6AN"]
+```
 
 ##All available fields
 
