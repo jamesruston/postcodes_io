@@ -4,7 +4,7 @@ RSpec.describe Postcodes::IO, '#reverse_geocode' do
   let(:latitiude) { '53.6099106263766' }
   let(:longitude) { '2.60515477763266' }
   let(:base_url) { 'https://api.postcodes.io' }
-  let(:url) { "#{base_url}/postcodes?lon=#{longitude}&lat=#{latitiude}" }
+  let(:url) { "#{base_url}/postcodes?lon=#{longitude}&lat=#{latitiude}&limit=10&radius=100&wideSearch=false" }
   let(:no_results_response) do
     File.read('spec/fixtures/no_results_response.json')
   end
