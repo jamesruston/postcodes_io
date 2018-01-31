@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jamesruston/postcodes_io.svg?branch=master)](https://travis-ci.org/jamesruston/postcodes_io)
 # PostcodesIo
 
 A simple wrapper around [postcodes.io](http://postcodes.io/)
