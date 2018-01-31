@@ -62,6 +62,14 @@ postcodes = pio.autocomplete('NN12')
 puts postcodes.list # ["NN12 6AA", "NN12 6AB", "NN12 6AD", "NN12 6AE", "NN12 6AF", "NN12 6AG", "NN12 6AH", "NN12 6AJ", "NN12 6AL", "NN12 6AN"]
 ```
 
+
+### Perform a reverse geocode lookup
+
+```ruby
+postcodes = pio.reverse_geocode(longitude: 0.629834, latitude: 51.79232)
+puts postcodes.first.postcode # CM8 1EF
+```
+
 ### All available fields
 
 |name|description|
