@@ -32,7 +32,7 @@ Create new instance of the Postcodes::IO
 pio = Postcodes::IO.new
 ```
 
-####Lookup a postcode
+### Lookup a postcode
 ```ruby
 postcode = pio.lookup('NN12 8TN')
 ```
@@ -43,7 +43,7 @@ postcode.longitude # -1.02144562675883
 postcode.latitude # 52.0776806788868
 ```
 
-####Make a batch postcode lookup request
+### Make a batch postcode lookup request
 
 > max 100 postcodes per request
 
@@ -54,12 +54,13 @@ postcodes.each do |p|
 end
 ```
 
-####Autocomplete a postcode
+### Autocomplete a postcode
 
 ```ruby
 postcodes = pio.autocomplete('NN12')
 puts postcodes.list # ["NN12 6AA", "NN12 6AB", "NN12 6AD", "NN12 6AE", "NN12 6AF", "NN12 6AG", "NN12 6AH", "NN12 6AJ", "NN12 6AL", "NN12 6AN"]
 ```
+
 
 ### Perform a reverse geocode lookup
 
@@ -68,7 +69,7 @@ postcodes = pio.reverse_geocode(longitude: 0.629834, latitude: 51.79232)
 puts postcodes.first.postcode # CM8 1EF
 ```
 
-##All available fields
+### All available fields
 
 |name|description|
 |----|-----------|
@@ -89,14 +90,14 @@ puts postcodes.first.postcode # CM8 1EF
 |region| [former GORs](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/administrative/england/government-office-regions/index.html)|
 |parish| The smallest type of administrative area|
 |lsoa| [The 2011 Census lower layer SOA code](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/census/super-output-areas--soas-/index.html)|
-|msoa| [The 2011 Census middle layer SOA (MSOA) code](The 2011 Census lower layer SOA code for England and Wales](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/census/super-output-areas--soas-/index.html)|
+|msoa| [The 2011 Census middle layer SOA (MSOA) code](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/census/super-output-areas--soas-/index.html)|
 |ccg| Clinical Commissioning Group |
 |nuts| [see here](http://en.wikipedia.org/wiki/Nomenclature_of_Territorial_Units_for_Statistics)|
 
 For more details see [the documentation on postcodes.io](http://postcodes.io/docs)
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/postcodes_io/fork )
+1. Fork it ( https://github.com/jamesruston/postcodes_io/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
