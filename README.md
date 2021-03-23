@@ -70,6 +70,17 @@ postcodes = pio.reverse_geocode(longitude: 0.629834, latitude: 51.79232)
 puts postcodes.first.postcode # CM8 1EF
 ```
 
+### Lookup a terminated postcode
+```ruby
+postcode = pio.lookup_terminated('SO23 7SP')
+```
+
+Inspect the results!
+```ruby
+postcode.longitude # -1.02144562675883
+postcode.latitude # 52.0776806788868
+```
+
 ### All available fields
 
 |name|description|

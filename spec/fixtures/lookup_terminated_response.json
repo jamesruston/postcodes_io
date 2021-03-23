@@ -1,0 +1,10 @@
+{
+    "status": 200,
+    "result": {
+      "postcode": "SO23 9DD",
+      "year_terminated": 2001,
+      "month_terminated": 8,
+      "longitude": -1.316261,
+      "latitude": 51.062297
+    }
+}
